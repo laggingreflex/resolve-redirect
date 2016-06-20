@@ -16,10 +16,17 @@ const getResponse = async (url, callback=()=>{}) => {
     const req = ('https:' === protocol ? https : http).request({
       method: 'HEAD',
       host,
-      path,
-    }, (res) => {
+      path
+    });
+
+    req.on('response', (res) => {
       callback(null, res);
       resolve(res);
+    });
+
+    req.on('error', (err) => {
+      callback(err);
+      reject(err)
     });
 
     req.end();

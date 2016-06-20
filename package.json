@@ -1,6 +1,6 @@
 {
   "name": "resolve-redirect",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Follows redirects and passes back last URL",
   "main": "./lib/index.js",
   "scripts": {
