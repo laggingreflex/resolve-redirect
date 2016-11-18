@@ -1,10 +1,12 @@
-# resolve-redirects
+# resolve-redirect
 
 Follows redirects and passes back last URL
 
 ## Install
 
-npm i resolve-redirects -S
+```sh
+npm i resolve-redirect -S
+```
 
 ## Usage
 

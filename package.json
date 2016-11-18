@@ -8,6 +8,7 @@
     "test": "ava --require babel-register --require babel-polyfill"
   },
   "author": "cezary",
+  "repository": "cezary/resolve-redirect",
   "license": "MIT",
   "devDependencies": {
     "ava": "^0.15.2",
